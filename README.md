@@ -60,7 +60,7 @@ O app ainda não foi hospedado em nenhuma plataforma, porém você poderá clon�
 <!-- GETTING STARTED -->
 ## Iniciando o projeto
 
-Primeiramente será necessário clonar este projeto em (https://github.com/BrunoCarvalhoFeitosa/AirMax270-LandingPage.git), após o download será necessário abrir este projeto no seu
+Primeiramente será necessário clonar este projeto em (https://github.com/BrunoCarvalhoFeitosa/adidasNMD.git), após o download será necessário abrir este projeto no seu
 editor e no terminal digitar npm install, posteriormente é só executar o script npm start e a aplicação será aberta em seu navegador. 
 
 ### Pré-requisitos
@@ -74,7 +74,7 @@ editor e no terminal digitar npm install, posteriormente é só executar o scrip
 
 1. Clone o repositório
    ```sh
-   git clone https://github.com/BrunoCarvalhoFeitosa/AirMax270-LandingPage.git
+   git clone https://github.com/BrunoCarvalhoFeitosa/adidasNMD.git
    ```
 2. Instale os pacotes do NPM
    ```sh
