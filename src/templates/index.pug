@@ -1,0 +1,96 @@
+body
+  include subtemplates/__page-header.pug
+
+  section.b-loader
+    div.b-loader__item.first
+    div.b-loader__item.second
+      img(src="../images/icon-adidas-trefoil-500.png")/
+    div.b-loader__item.third
+
+  section.b-banner
+      div.b-banner__languages
+        ul.b-banner__languages-ul
+          li.b-banner__languages-ul__li ENG
+          li.b-banner__languages-ul__li ESP
+          li.b-banner__languages-ul__li FRA
+          li.b-banner__languages-ul__li BRA
+      div.b-banner__image
+        img(src="../images/banner-home.jpg")/
+
+  section.b-first-section
+    section.b-first-section__text
+      h2 01
+      p A linha NMD nasceu da ideia de unir passado e futuro. A empresa germânica pegou referências de três modelos clássicos da década de 1980: Micro Pacer, Rising Star e Boston Super, uma combinação que resultou em um modelo com uma silhueta ajustável, leve e com plots de plástico nas laterais.
+
+      p O modelo ainda conta com o amortecimento Boost desenvolvido pela adidas e inspirado em tecnologias utilizadas por empresas como a Nasa em testes de colisão e em análise de resistência. Com esse sistema, o solado do tênis se adapta ao formato e à movimentação dos pés, ou seja, se encaixa à pisada de quem o está utilizando.
+    section.b-first-section__empty
+  
+  section.b-first-glass-image
+    div.b-first-glass-image__empty
+    div.b-first-glass-image__presentation
+      div.img-magnifier-container.b-first-glass-image__presentation-image
+        img(src="../images/image-nmd-xr1-01.png", id="nmd-image-one", alt="Adidas NMD")/
+      div.b-first-glass-image__presentation-info
+        div.b-first-glass-image__presentation-info__icon
+          img(src="../images/icon-sides.png", class="anim", alt="Passe o mouse")/
+        div.b-first-glass-image__presentation-info__text
+          p Passe o mouse sobre a imagem
+  
+  section.b-second-section
+   section.b-second-section__empty
+   section.b-second-section__text
+     h2 02
+     p Um dos principais lançamentos da marca, o adidas NMD R1 é um dos tênis mais cobiçados do universo street style. A empresa alemã revolucionou com a produção de uma silhueta diferenciada que dá uma sensação de leveza, além de uma construção única para o ajuste perfeito nos pés.
+
+      p Tenha a real sensação de conforto em sua vida e em seu pé. Os materiais utilizados para produção deste calçado foram totalmente estudados e testados garantindo à você todo o conforto possível para ir ao trabalho, à balada ou aonde você quiser.
+  
+  section.b-second-glass-image
+    div.b-second-glass-image__empty
+    div.b-second-glass-image__presentation
+      div.img-magnifier-container.b-second-glass-image__presentation-image
+        img(src="../images/image-nmd-xr1-02.png", id="nmd-image-two", alt="Adidas NMD")/
+      div.b-second-glass-image__presentation-info
+        div.b-second-glass-image__presentation-info__icon
+          img(src="../images/icon-sides.png", alt="Passe o mouse")/
+        div.b-second-glass-image__presentation-info__text
+          p Passe o mouse sobre a imagem
+
+  section.b-third-section
+    section.b-third-section__text
+      h2 03
+      p Perfeito para longas caminhadas e corridas em geral, a maioria dos profissionais o usam em seus treinos devido a tecnologia BOOST presente em ambos os solados, seu material proporciona leveza constante ao tocar o solo.
+
+      p Este modelo possui diversas variações de cores, perfeito para pessoas ousadas que curtem combinar cores e perfeito também para pessoas neutras que curtem utilizá-lo com cores mornas que adequem-se a qualquer ambiente.
+    section.b-third-section__empty
+  
+  section.b-third-glass-image
+    div.b-third-glass-image__presentation
+      div.img-magnifier-container.b-third-glass-image__presentation-image
+        img(src="../images/image-nmd-xr1-03.png", id="nmd-image-three", alt="Adidas NMD")/
+      div.b-third-glass-image__presentation-info
+        div.b-third-glass-image__presentation-info__icon
+          img(src="../images/icon-sides.png", alt="Passe o mouse")/
+        div.b-third-glass-image__presentation-info__text
+          p Passe o mouse sobre a imagem
+    div.b-third-glass-image__empty
+  
+  section.b-gallery
+    div.b-gallery__item
+      img(src="../images/image-gallery-01.jpg")/
+    div.b-gallery__item
+      img(src="../images/image-gallery-02.jpg")/
+    div.b-gallery__item
+      img(src="../images/image-gallery-03.jpg")/
+    aside.b-gallery__aside
+      div.b-gallery__aside-arrow
+        img(src="../images/icon-right-arrow.png")/
+      div.b-gallery__aside-nmd
+        span.n N
+        span.m M
+        span.d D
+  
+  section.b-nmdText
+    h5 NMD
+
+  include subtemplates/__page-footer.pug
+

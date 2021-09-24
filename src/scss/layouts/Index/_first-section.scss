@@ -1,0 +1,107 @@
+.b-first-section {
+  display: flex;
+  width: 100%;
+  &__text {
+    width: 50%;
+    padding-left: 5%;
+    > h2 {
+      @include px-for-rem(200, font-size);
+      color: $gray-light;
+
+      @include for-mobile {
+        @include px-for-rem(200, line-height);
+      }
+
+      @include for-tablet {
+        @include px-for-rem(200, line-height);
+      }
+    }
+    > p {
+        @include px-for-rem(50, text-indent);
+      &:first-of-type {
+        @include px-for-rem(10, margin-bottom);
+      }
+    }
+    @include for-mobile {
+      width: 100%;
+    }
+
+    @include for-tablet {
+      width: 100%;
+      padding-right: 5%;
+    }
+  }
+  &__empty {
+    width: 50%;
+
+    @include for-mobile {
+      display: none;
+    }
+
+    @include for-tablet {
+      display: none;
+    }
+  }
+  @include for-mobile {
+    @include px-for-rem(34, margin-top);
+  }
+
+  @include for-tablet {
+    @include px-for-rem(54, margin-top);
+  }
+}
+
+.b-first-glass-image {
+  @include px-for-rem(40, margin-top);
+  display: flex;
+  width: 100%;
+  &__empty {
+    width: 6%;
+
+    @include for-mobile {
+      display: none;
+    }
+
+    @include for-tablet {
+      display: none;
+    }
+  }
+  &__presentation {
+    width: 94%;
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      &__icon {
+        animation: passTheMouse 1.6s infinite;
+      }
+      @include for-mobile {
+        width: 100%;
+      }
+
+      @include for-tablet {
+        width: 100%;
+      }
+    }
+    &-image {
+      > img {
+        @include for-mobile {
+          margin: 0 auto;
+          width: 90%;
+          display: flex;
+        }
+
+        @include for-tablet {
+          margin: 0 auto;
+          width: 82%;
+          display: flex;
+        }
+      }
+    }
+    @include for-mobile {
+      width: 100%;
+    }
+  }
+}

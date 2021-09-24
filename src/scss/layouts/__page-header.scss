@@ -1,0 +1,72 @@
+@import "./_mixins";
+@import './_colors';
+
+.b-header {
+  display: flex;
+  width: 100%;
+  @include px-for-rem(70, height);
+  background: $white;
+  &__brand {
+    width: 55%;
+    &-image {
+      display: flex;
+      justify-content: flex-end;
+      @include transform(translate(-42px, 12px));
+      img {
+        @include px-for-rem(50, width);
+        opacity: .2;
+      }
+      @include for-mobile {
+        @include transform(translate(-17px, 12px));
+      }
+    }
+    @include for-mobile {
+      width: 26%;
+    }
+    @include for-tablet {
+      width: 40%;
+    }
+  }
+  &__categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    background: $black;
+    &-links {
+      @include px-for-rem(30, padding-left);
+      &__ul {
+        display: flex;
+        align-items: center;
+        &-li {
+          &:not(:last-of-type) {
+            @include px-for-rem(20, margin-right);
+          }
+          > a {
+            font-family: 'Titillium Web', sans-serif;
+            text-transform: uppercase;
+            @include px-for-rem(3, letter-spacing);
+            @include px-for-rem(12, font-size);
+            color: $white;
+          }
+        }
+      }
+    }
+    &-nmd {
+      @include px-for-rem(30, padding-right);
+      > h2 {
+        color: $white;
+      }
+      @include for-mobile {
+        display: none;
+      }
+    }
+    @include for-mobile {
+      width: 74%;
+    }
+
+    @include for-tablet {
+      width: 60%;
+    }
+  }
+}

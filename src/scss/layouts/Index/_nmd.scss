@@ -1,0 +1,25 @@
+.b-nmdText {
+  display: flex;
+  justify-content: end;
+  background: $black;
+  overflow: hidden;
+  h5 {
+    font-size: 36rem;
+    line-height: 29rem;
+    @include px-for-rem(40, letter-spacing);
+    text-align: center;
+    opacity: 0.07;
+    position: relative;
+    @include px-for-rem(80, left);
+    @include px-for-rem(117, top);
+    color: $white;
+
+    @include for-mobile {
+      font-size: 10rem;
+      line-height: 10rem;
+      @include px-for-rem(10, letter-spacing);
+      @include px-for-rem(27, top);
+      @include px-for-rem(32, left);
+    }
+  }
+}

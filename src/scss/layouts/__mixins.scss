@@ -1,0 +1,49 @@
+@mixin for-desktop {
+    @media (min-width: 1200px) and (max-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin for-tablet {
+    @media (min-width: 48rem) and (max-width: 64rem) {
+        @content;
+    }
+}
+
+@mixin for-mobile {
+    @media (max-width: 680px) {
+        @content;
+    }
+}
+
+@mixin px-for-rem($pxValue, $property: "font-size", $standard-size: 16) {
+    #{$property}: $pxValue + px;
+    #{$property}: $pxValue/$standard-size + rem;
+}
+
+@mixin transform($propertie) {
+    transform: $propertie;
+    -moz-transform: $propertie;
+    -o-transform: $propertie;
+    -webkit-transform: $propertie;
+}
+
+@mixin transition($propertie) {
+    transition: $propertie;
+    -moz-transition: $propertie;
+    -o-transition: $propertie;
+    -webkit-transition: $propertie;
+}
+
+@mixin animation($propertie) {
+    animation: $propertie;
+    -moz-animation: $propertie;
+    -o-animation: $propertie;
+    -webkit-animation: $propertie;
+}
+
+@mixin filter($propertie) {
+    filter: $propertie;
+    -ms-filter: $propertie;
+    -webkit-filter: $propertie;
+}
